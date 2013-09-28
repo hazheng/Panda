@@ -1,0 +1,3 @@
+Quorum = 2 people (not from same branch) + person who did code changes
+Before code additions, you have to have code review
+Naming Scheme = lower case letters and underscores
