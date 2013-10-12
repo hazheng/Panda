@@ -1,1 +1,2 @@
 We have to add the outputs structuring like process_commands.vi and making the outputs cluster..
+Figure out why *.lvproj like files are still being included in commits even though they are in .gitignore
