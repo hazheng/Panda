@@ -1,3 +1,9 @@
 We have to add the outputs structuring like process_commands.vi and making the outputs cluster..
+<<<<<<< HEAD
 Figure out why *.lvproj like files are still being included in commits even though they are in .gitignore
 Remove the ADXL345 dependency from system files. (Put it into util or something and have LabVIEW relink where it's getting it from).
+=======
+Redo VI Graphics
+Redo names with controls to match naming convention
+Recode MecanumCalc
+>>>>>>> origin/Mecanum-Drive
