@@ -130,6 +130,18 @@ KeepAliveTimeout 60
 			<Item Name="Outputs.ctl" Type="VI" URL="../util/Outputs.ctl"/>
 			<Item Name="apply_deadband.vi" Type="VI" URL="../util/apply_deadband.vi"/>
 			<Item Name="set_outputs.vi" Type="VI" URL="../util/set_outputs.vi"/>
+			<Item Name="multiplex.vi" Type="VI" URL="../util/multiplex.vi"/>
+			<Item Name="toggle.vi" Type="VI" URL="../util/toggle.vi"/>
+			<Item Name="p_edge.vi" Type="VI" URL="../util/p_edge.vi"/>
+		</Item>
+		<Item Name="Shooter" Type="Folder">
+			<Item Name="shooter_begin.vi" Type="VI" URL="../Shooter/shooter_begin.vi"/>
+			<Item Name="shooter_cmds.ctl" Type="VI" URL="../Shooter/shooter_cmds.ctl"/>
+			<Item Name="shooter_getcmds.vi" Type="VI" URL="../Shooter/shooter_getcmds.vi"/>
+			<Item Name="shooter_outputs.ctl" Type="VI" URL="../Shooter/shooter_outputs.ctl"/>
+			<Item Name="timer.vi" Type="VI" URL="../util/timer.vi"/>
+			<Item Name="shooter_calc.vi" Type="VI" URL="../Shooter/shooter_calc.vi"/>
+			<Item Name="shooter_out.vi" Type="VI" URL="../Shooter/shooter_out.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
