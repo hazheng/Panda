@@ -135,13 +135,21 @@ KeepAliveTimeout 60
 			<Item Name="p_edge.vi" Type="VI" URL="../util/p_edge.vi"/>
 		</Item>
 		<Item Name="Shooter" Type="Folder">
-			<Item Name="shooter_begin.vi" Type="VI" URL="../Shooter/shooter_begin.vi"/>
-			<Item Name="shooter_cmds.ctl" Type="VI" URL="../Shooter/shooter_cmds.ctl"/>
-			<Item Name="shooter_getcmds.vi" Type="VI" URL="../Shooter/shooter_getcmds.vi"/>
-			<Item Name="shooter_outputs.ctl" Type="VI" URL="../Shooter/shooter_outputs.ctl"/>
+			<Item Name="shooter_begin.vi" Type="VI" URL="../shooter/shooter_begin.vi"/>
+			<Item Name="shooter_cmds.ctl" Type="VI" URL="../shooter/shooter_cmds.ctl"/>
+			<Item Name="shooter_getcmds.vi" Type="VI" URL="../shooter/shooter_getcmds.vi"/>
+			<Item Name="shooter_outputs.ctl" Type="VI" URL="../shooter/shooter_outputs.ctl"/>
 			<Item Name="timer.vi" Type="VI" URL="../util/timer.vi"/>
-			<Item Name="shooter_calc.vi" Type="VI" URL="../Shooter/shooter_calc.vi"/>
-			<Item Name="shooter_out.vi" Type="VI" URL="../Shooter/shooter_out.vi"/>
+			<Item Name="shooter_calc.vi" Type="VI" URL="../shooter/shooter_calc.vi"/>
+			<Item Name="shooter_out.vi" Type="VI" URL="../shooter/shooter_out.vi"/>
+		</Item>
+		<Item Name="Climber" Type="Folder">
+			<Item Name="climber-begin.vi" Type="VI" URL="../climber/climber-begin.vi"/>
+			<Item Name="climber_cmds.ctl" Type="VI" URL="../climber/climber_cmds.ctl"/>
+			<Item Name="climber_getcmds.vi" Type="VI" URL="../climber/climber_getcmds.vi"/>
+			<Item Name="climber_outputs.ctl" Type="VI" URL="../climber/climber_outputs.ctl"/>
+			<Item Name="climber_calc.vi" Type="VI" URL="../climber/climber_calc.vi"/>
+			<Item Name="climber_out.vi" Type="VI" URL="../climber/climber_out.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -652,6 +660,11 @@ KeepAliveTimeout 60
 				<Item Name="WPI_CANJaguar_ConfigBrakeCoast.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigBrakeCoast.vi"/>
 				<Item Name="WPI_MotorControlEnable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlEnable.vi"/>
 				<Item Name="WPI_MotorControlRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Set.vi"/>
+				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
+				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
+				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
+				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
+				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -659,12 +672,10 @@ KeepAliveTimeout 60
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="climber-begin.vi" Type="VI" URL="../climber/climber-begin.vi"/>
-			<Item Name="climber_cmds.ctl" Type="VI" URL="../climber/climber_cmds.ctl"/>
-			<Item Name="climber_getcmds.vi" Type="VI" URL="../climber/climber_getcmds.vi"/>
-			<Item Name="climber_outputs.ctl" Type="VI" URL="../climber/climber_outputs.ctl"/>
-			<Item Name="climber_calc.vi" Type="VI" URL="../climber/climber_calc.vi"/>
-			<Item Name="climber_out.vi" Type="VI" URL="../climber/climber_out.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
