@@ -1,3 +1,8 @@
+#LABVIEW
+*.aliases
+*.lvlps
+*.lvproj
+
 #################
 ## Eclipse
 #################
@@ -213,8 +218,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-
-#LabVIEW
-*.aliases
-*.lvlps
-*.lvproject

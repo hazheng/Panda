@@ -17,8 +17,13 @@
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
 		<Property Name="alias.value" Type="Str">10.4.49.2</Property>
+<<<<<<< HEAD
 		<Property Name="CCSymbols" Type="Str">OS,VxWorks;CPU,PowerPC;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">75C7</Property>
+=======
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,VxWorks;CPU,PowerPC;</Property>
+		<Property Name="crio.ControllerPID" Type="Str">729D</Property>
+>>>>>>> origin/master
 		<Property Name="crio.family" Type="Str">901x</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -115,8 +120,36 @@ KeepAliveTimeout 60
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
+		<Item Name="Mecanum" Type="Folder">
+			<Item Name="mecanum_control.ctl" Type="VI" URL="../mecanum/mecanum_control.ctl"/>
+			<Item Name="mecanum_get_commands.vi" Type="VI" URL="../mecanum/mecanum_get_commands.vi"/>
+			<Item Name="mecanum_begin.vi" Type="VI" URL="../mecanum/mecanum_begin.vi"/>
+			<Item Name="mecanum_calc.vi" Type="VI" URL="../mecanum/mecanum_calc.vi"/>
+			<Item Name="mecanum_set_outputs.vi" Type="VI" URL="../mecanum/mecanum_set_outputs.vi"/>
+			<Item Name="mecanum_output.ctl" Type="VI" URL="../mecanum/mecanum_output.ctl"/>
+		</Item>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="inputs_to_commands.vi" Type="VI" URL="../util/inputs_to_commands.vi"/>
+			<Item Name="joystick_begin.vi" Type="VI" URL="../util/joystick_begin.vi"/>
+			<Item Name="Commands.ctl" Type="VI" URL="../util/Commands.ctl"/>
+			<Item Name="joystick_to_inputs.vi" Type="VI" URL="../util/joystick_to_inputs.vi"/>
+			<Item Name="Outputs.ctl" Type="VI" URL="../util/Outputs.ctl"/>
+			<Item Name="apply_deadband.vi" Type="VI" URL="../util/apply_deadband.vi"/>
+			<Item Name="set_outputs.vi" Type="VI" URL="../util/set_outputs.vi"/>
+			<Item Name="multiplex.vi" Type="VI" URL="../util/multiplex.vi"/>
+			<Item Name="toggle.vi" Type="VI" URL="../util/toggle.vi"/>
+			<Item Name="p_edge.vi" Type="VI" URL="../util/p_edge.vi"/>
+		</Item>
+		<Item Name="Shooter" Type="Folder">
+			<Item Name="shooter_begin.vi" Type="VI" URL="../Shooter/shooter_begin.vi"/>
+			<Item Name="shooter_cmds.ctl" Type="VI" URL="../Shooter/shooter_cmds.ctl"/>
+			<Item Name="shooter_getcmds.vi" Type="VI" URL="../Shooter/shooter_getcmds.vi"/>
+			<Item Name="shooter_outputs.ctl" Type="VI" URL="../Shooter/shooter_outputs.ctl"/>
+			<Item Name="timer.vi" Type="VI" URL="../util/timer.vi"/>
+			<Item Name="shooter_calc.vi" Type="VI" URL="../Shooter/shooter_calc.vi"/>
+			<Item Name="shooter_out.vi" Type="VI" URL="../Shooter/shooter_out.vi"/>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="MecanumCalculate.vi" Type="VI" URL="../mecanum/MecanumCalculate.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
@@ -582,9 +615,14 @@ KeepAliveTimeout 60
 				<Item Name="WPI_CameraPublish Settings.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraPublish Settings.vi"/>
 				<Item Name="WPI_CameraGet Frame Rate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Frame Rate.vi"/>
 				<Item Name="NT Write String Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write String Array.vi"/>
+<<<<<<< HEAD
 				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
 				<Item Name="WPI_JoystickOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickOpen.vi"/>
 				<Item Name="WPI_JoystickRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRefNum Registry Set.vi"/>
+=======
+				<Item Name="WPI_JoystickRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRefNum Registry Set.vi"/>
+				<Item Name="WPI_JoystickOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickOpen.vi"/>
+>>>>>>> origin/master
 				<Item Name="WPI_CANJaguar_BrakeCoastMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_BrakeCoastMode.ctl"/>
 				<Item Name="WPI_MotorControlOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen.vi"/>
 				<Item Name="WPI_MotorControlOpen Jaguar.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen Jaguar.vi"/>
@@ -596,9 +634,12 @@ KeepAliveTimeout 60
 				<Item Name="WPI_MotorControlOpen Victor.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen Victor.vi"/>
 				<Item Name="WPI_MotorControlOpenCANJaguar.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpenCANJaguar.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
+<<<<<<< HEAD
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
+=======
+>>>>>>> origin/master
 				<Item Name="WPI_ERRMotorControlCANJaguarDevice.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_ERRMotorControlCANJaguarDevice.vi"/>
 				<Item Name="WPI_CANJaguar_GetVersion.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_GetVersion.vi"/>
 				<Item Name="WPI_CAN_UpdateMessageIDs.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CAN_UpdateMessageIDs.ctl"/>
@@ -615,6 +656,7 @@ KeepAliveTimeout 60
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+<<<<<<< HEAD
 			<Item Name="joystick_begin.vi" Type="VI" URL="../util/joystick_begin.vi"/>
 			<Item Name="climber-begin.vi" Type="VI" URL="../climber/climber-begin.vi"/>
 			<Item Name="Commands.ctl" Type="VI" URL="../util/Commands.ctl"/>
@@ -628,6 +670,8 @@ KeepAliveTimeout 60
 			<Item Name="climber_calc.vi" Type="VI" URL="../climber/climber_calc.vi"/>
 			<Item Name="out.vi" Type="VI" URL="../out.vi"/>
 			<Item Name="climber_out.vi" Type="VI" URL="../climber/climber_out.vi"/>
+=======
+>>>>>>> origin/master
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
