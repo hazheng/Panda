@@ -1,9 +1,3 @@
-#LABVIEW
-*.aliases
-*.lvlps
-*.lvproj
-
-
 #################
 ## Eclipse
 #################
